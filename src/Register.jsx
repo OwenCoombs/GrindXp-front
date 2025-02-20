@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link component
 import './Register.css';
 
 export default function Register() {
@@ -105,6 +106,11 @@ export default function Register() {
             {isLoading ? <div className="loading-spinner"></div> : "Sign up"}
           </button>
         </form>
+
+        {/* Link to the Register page */}
+        <div className="register-link">
+          <p>Already have an account? <Link to="/">Sign in</Link></p>
+        </div>
       </div>
     </div>
   );

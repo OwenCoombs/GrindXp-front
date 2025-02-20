@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import "./App.css";
 
 export default function App() {
@@ -90,6 +91,11 @@ export default function App() {
             {isLoading ? <div className="loading-spinner"></div> : "Sign in"}
           </button>
         </form>
+
+        {/* Link to the Register page */}
+        <div className="register-link">
+          <p>Don't have an account? <Link to="/register">Register</Link></p>
+        </div>
       </div>
     </div>
   );
