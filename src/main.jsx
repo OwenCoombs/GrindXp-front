@@ -13,18 +13,17 @@ import './App.css'
 import About from './About'
 import App from './App'
 import ErrorPage from './ErrorPage'
-import Header from './Header'
 import Footer from './Footer'
+import Register from './Register'
+import Dashboard from './Dashboard'
 
 
 function Layout() {
   return (
       <>
-        <Header />
         <div id='page-content'>
           <Outlet />
         </div>
-        <Footer />
       </>
   )
 }
@@ -43,6 +42,14 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />
       },
+      {
+        path: '/register',
+        element: <Register />
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard />
+      }
     ]
   }
 ])
