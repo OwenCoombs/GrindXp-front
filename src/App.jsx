@@ -17,7 +17,7 @@ export default function App() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login/', {
+      const response = await axios.post('https://grindxp-backend.fly.dev/api/login/', {
         username: formData.email, // Use "username" instead of "email"
         password: formData.password,
       });

@@ -34,7 +34,7 @@ export default function Dashboard() {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/profile', {
+      const response = await fetch('https://grindxp-backend.fly.dev/profile', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access')}`
         }
@@ -63,7 +63,7 @@ export default function Dashboard() {
     }
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/profile/update/', {
+      const response = await fetch('https://grindxp-backend.fly.dev/profile/update/', {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access')}`

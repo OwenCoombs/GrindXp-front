@@ -17,7 +17,7 @@ export default function Register() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/register/', {
+      const response = await axios.post('https://grindxp-backend.fly.dev/api/register/', {
         username: formData.username,
         password: formData.password,
         first_name: formData.first_name,
